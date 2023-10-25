@@ -1,5 +1,6 @@
 import java.text.SimpleDateFormat
 
+
 def TODAY = (new SimpleDateFormat("yyyyMMddHHmmss")).format(new Date())
 
 pipeline {
@@ -12,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url:'https://github.com/mildkim/guestbook.git'
+                git branch: 'master', url:'https://github.com/mildKim/guestbook.git'
             }
         }
         stage('Build') {
